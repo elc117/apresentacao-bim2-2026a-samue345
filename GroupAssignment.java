@@ -4,7 +4,11 @@ public class GroupAssignment extends Assignment {
   private String teamMates;
 
   public String message() {
-    return "COMPLETE-ME";
+    if (this.teamMates != null) {
+       return super.message() + " - call " + this.teamMates;
+    }
+
+    return super.message();
   }
 
   public GroupAssignment(LocalDate dueDate, String description, String teamMates) {
