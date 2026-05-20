@@ -5,7 +5,6 @@ class TrueFalseQuestion extends Question {
 
     @Override
     public void showQuestion() {
-        System.out.println("Verdadeiro ou falso:");
-        System.out.println(statement);
+        System.out.println("Verdadeiro ou falso: " +  statement);
     }
 }

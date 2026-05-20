@@ -10,8 +10,7 @@ class MultipleChoiceQuestion extends Question {
 
     @Override
     public void showQuestion() {
-        System.out.println("Múltipla escolha:");
-        System.out.println(statement);
+        System.out.println("Múltipla escolha: " + statement);
 
         for (int i = 0; i < options.size(); i++) {
             System.out.println((i + 1) + ") " + options.get(i));

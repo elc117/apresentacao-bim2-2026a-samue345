@@ -23,9 +23,14 @@ class Quiz {
         }
     }
 
-    public void randomQuestion() {
-        Random random = new Random();
-        int index = random.nextInt(questions.size());
-        questions.get(index).showQuestion();
+    public void showQuestions() {
+        for (Question question : questions) {
+            question.showQuestion();
+            System.out.println();
+        }
+    }
+    
+    public List<Question> getQuestions() {
+       return questions;
     }
 }
