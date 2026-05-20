@@ -36,7 +36,14 @@ public class TrackAssignments {
     }
 
 
-    // COMPLETE-ME: count completed assignments
+    int completed = 0;
+    for (Assignment item: list){
+      if(!item.isPending()){
+        completed++;
+      }
+    }
+
+    System.out.println("Completed assignments: " + completed);
   }
   
 }
