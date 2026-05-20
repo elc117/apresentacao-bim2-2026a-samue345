@@ -44,4 +44,8 @@ public class Assignment {
     
   }
 
+  @Override
+  public String toString() {
+    return "{ Due date: " + this.dueDate + ", description: " + this.description + ", pending: " + this.pending + ", submit date: " + this.submitDate + " }";
+  }
 }
