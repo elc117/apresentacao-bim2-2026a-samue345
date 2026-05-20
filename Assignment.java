@@ -35,7 +35,13 @@ public class Assignment {
   }
 
   private String status() {
-    return "COMPLETE-ME";
+      if(!this.pending){
+        return "done";
+      }
+
+      int dueInDays = this.daysLeft();
+
+      return  dueInDays < 0 ? "late" : "Due in " + dueInDays + " days";
   }
 
 
